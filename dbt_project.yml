@@ -11,7 +11,7 @@ vars:
     integration: "{{ source('klaviyo', 'integration') }}"
     person: "{{ source('klaviyo', 'person') }}"
     metric: "{{ source('klaviyo', 'metric') }}"
-    klaviyo__event_pass_through_columns: []
+    klaviyo__event_pass_through_columns: ["property_tags"]
     klaviyo__person_pass_through_columns: []
 
   dbt_utils_dispatch_list: ['spark_utils', 'dbt_utils']
